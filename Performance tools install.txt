@@ -1,0 +1,7 @@
+dotnet add package System.Diagnostics.PerformanceCounter
+
+dotnet add package System.Management
+
+dotnet restore
+
+dotnet add package Microsoft.VisualBasic

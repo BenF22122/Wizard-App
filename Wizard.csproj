@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+
+    <!-- Enable modern C# features -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- Required for NotifyIcon + WinForms components -->
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Optional but harmless -->
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
+    <PackageReference Include="MetadataExtractor" Version="2.9.3" />
+    <PackageReference Include="NAudio" Version="2.3.0" />
+    <PackageReference Include="PdfPig" Version="0.1.14" />
+
+    <!-- Required for some legacy Windows APIs -->
+    <!-- <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="8.0.0" /> -->
+    <PackageReference Include="System.Management" Version="10.0.9" />
+
+    <!-- Your hardware monitor library -->
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.3" />
+
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="9.0.0" />
+
+    <PackageReference Include="TagLibSharp" Version="2.3.0" />
+
+  </ItemGroup>
+
+</Project>
